@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Douglas Obara">
+    <title>Usernames In The Database</title>
+</head>
+<body>
+    <h1> These are all the Usernames in the database</h1>
+    <ol>
+        {% for name in names_in_db %}
+            <li>{{name.Username}}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
